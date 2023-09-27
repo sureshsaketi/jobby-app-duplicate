@@ -1,0 +1,138 @@
+.jobs-page-container {
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.jobs-page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex-grow: 1;
+}
+@media screen and (min-width: 768px) {
+  .jobs-page {
+    flex-direction: row;
+    gap: 30px;
+    padding: 40px 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .jobs-container {
+    width: 70%;
+  }
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.search-input {
+  background-color: transparent;
+  width: 85%;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  height: 40px;
+  padding-left: 20px;
+}
+.search-button {
+  width: 15%;
+  background-color: #272727;
+  height: 38px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+@media screen and (min-width: 575) {
+  .search-input {
+    width: 90%;
+  }
+  .search-button {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #smallSearchBar {
+    display: none;
+  }
+}
+.separator {
+  border: 1px solid #64748b;
+}
+#largeSearchBar {
+  display: none;
+  width: 400px;
+}
+@media screen and (min-width: 768px) {
+  #largeSearchBar {
+    display: block;
+  }
+}
+.jobs-loader-container {
+  flex-grow: 1;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.job-card-list {
+  list-style: none;
+  padding: 0;
+}
+.no-jobs-container,
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: #f1f5f9;
+}
+.no-jobs-image {
+  height: 250px;
+}
+@media screen and (min-width: 768px) {
+  .no-jobs-image {
+    height: 300px;
+    margin-top: 20px;
+  }
+}
+.no-jobs-found {
+  font-family: 'roboto';
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .no-jobs-found {
+    font-size: 40px;
+  }
+}
+.no-jobs-text {
+  color: #cbd5e1;
+}
+@media screen and (min-width: 768px) {
+  .no-jobs-text {
+    font-size: 18px;
+  }
+}

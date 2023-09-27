@@ -1,0 +1,86 @@
+.job-card {
+  min-height: 200px;
+  background-color: #202020;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.company-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.company-logo-image {
+  height: 42px;
+  width: 42px;
+}
+@media screen and (min-width: 768px) {
+  .company-logo-image {
+    height: 55px;
+    width: 55px;
+  }
+}
+.company-name-and-rating {
+  padding: 3px;
+}
+.title {
+  color: #f1f5f9;
+  font-family: 'roboto';
+  font-size: 20px;
+  line-height: 1.2;
+}
+.rating-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.rating-icon {
+  color: #fbbf24;
+}
+.rating {
+  color: #f1f5f9;
+}
+.location-and-package-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f1f5f9;
+}
+.location-container,
+.employment-type-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.package {
+  font-size: 20px;
+  font-family: 'roboto';
+  margin-left: auto;
+  font-weight: 500;
+}
+.description {
+  color: #f1f5f9;
+  font-family: 'roboto';
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.job-description {
+  color: #f1f5f9;
+  font-family: 'roboto';
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .job-description {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+}
+.job-card-link {
+  text-decoration: none;
+}
